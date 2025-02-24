@@ -1,0 +1,222 @@
+/*
+YELLOW: #FFE81F
+BLACK: #0A0203
+Hello there
+*/
+
+/* Import the custom fonts */
+@import url("https://fontlibrary.org//face/metropolis");
+@import url("http://fonts.cdnfonts.com/css/blanka");
+@font-face {
+    font-family: "Blanka";
+    font-style: normal;
+    font-weight: 400;
+    src:
+        local("Blanka"),
+        url("https://fonts.cdnfonts.com/s/18915/Blanka-Regular.woff")
+            format("woff");
+}
+
+/* Reset margins/padding and use the font */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "MetropolisRegular";
+}
+
+/* Universal Classes */
+.bg-black {
+    background: #0a0203;
+}
+.bg-gray {
+    background: #ececec;
+}
+.bg-yellow {
+    background: #ffe81f;
+}
+.center {
+    text-align: center;
+}
+.funnyfont {
+    font-family: "blanka";
+}
+.yellow {
+    color: #ffe81f;
+}
+.white {
+    color: white;
+}
+img {
+    width: 100%;
+}
+h1 {
+    color: #3e3e3e;
+}
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+/* Specific Styling */
+ul {
+    display: block;
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+header {
+    padding: 5px;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+li.dropList {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #ffe81f;
+}
+
+a.navitem:hover {
+    color: #ffe81f;
+    border-bottom: 1.5px solid #ffe81f;
+}
+
+footer {
+    text-align: center;
+}
+
+.IMG1 {
+    background-position: center 0;
+    background-image: url("IMG_7553.JPG");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 800px;
+}
+
+.center-xl-1 {
+    float: none;
+    text-align: center;
+}
+
+.center-xl-2 {
+    float: none;
+    text-align: center;
+    display: inline;
+    padding: 10px;
+    float: right;
+}
+
+.txt {
+    padding: 20px;
+    color: #6d6d6d;
+    text-align: justify;
+}
+
+.txt-col-2 {
+    color: rgb(210, 210, 210);
+}
+
+.outreach {
+    text-align: right;
+}
+
+.first {
+    text-align: left;
+}
+
+.about {
+    text-align: left;
+}
+
+.header-margin {
+    margin: 10px 0 0 0;
+}
+
+.IMG2 {
+    padding: 20px;
+    height: 400px;
+    width: 100%;
+    height: auto;
+}
+
+.IMG3 {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.firstlogo {
+    width: 75%;
+}
+
+.IMG1 {
+    max-height: 650px;
+}
+
+/* Reactive thingies */
+@media only screen and (min-width: 1200px) {
+    .IMG1 {
+        min-height: 300px;
+    }
+
+    .center-xl-1 {
+        text-align: left;
+        float: left;
+    }
+
+    .center-xl-2 {
+        text-align: right;
+        float: right;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .IMG2 {
+        max-height: 400px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .center-xl-1 {
+        text-align: center;
+        float: none;
+    }
+
+    .center-xl-2 {
+        text-align: center;
+        float: none;
+        position: relative;
+        right: 17.5px;
+    }
+
+    .IMG2 {
+        max-height: 600px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .IMG1 {
+        min-height: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .IMG2 {
+        min-height: 200px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .IMG1 {
+        min-height: 300px;
+    }
+}
